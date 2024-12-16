@@ -1,5 +1,6 @@
 .card{
     display: flex;
+    position: relative;
     flex: 1 0 300px;
     flex-direction: column;
     gap: 10px;
@@ -19,4 +20,10 @@
 
 .card__desc{
     font-size: var(--fs-s);
+    padding-bottom: 32px;
+}
+
+.card__btn{
+    position: absolute;
+    bottom: 0px;
 }

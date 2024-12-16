@@ -9,11 +9,23 @@
     transform: translateY(-1000px);
     transition: all 0.3s ease-in-out;
     background-color: var(--dark);
+    background-image: url(/assets/icon/menu-background-icon.svg);
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .menu[aria-hidden="false"] {
     transform: translateY(0);
     visibility: visible;
+}
+
+.sous-menu{
+    display: none;
+    align-items: center;
+}
+
+.sous-menu[aria-hidden="false"] {
+    display: flex;
 }
 
 .menu__list{
@@ -26,8 +38,12 @@
 
 .menu__link {
     font-family: var(--heading);
-    font-size: var(--fs-xl);
-    text-decoration: none;
+    font-size: var(--fs-xxl);
+}
+
+.sous-menu__link {
+    font-family: var(--heading);
+    font-size: var(--fs-l);
 }
 
 .menu__lang-switch{
