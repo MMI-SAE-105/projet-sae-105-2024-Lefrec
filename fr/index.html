@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/icon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/icon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="ArcheEVE" />
+    <meta name="apple-mobile-web-app-title" content="ArchEVE" />
     <link rel="manifest" href="/assets/icon/site.webmanifest" />
     <link rel="stylesheet" href="/src/css/style.css">
 </head>
@@ -16,11 +17,230 @@
 <body>
     <header class="header">
         <div class="header__bar">
-            <a class="header__logo" href="/fr/">
-
+            <a class="header__link" href="/fr/">
+                <img class="header__logo" src="/assets/icon/logo-default.svg" alt="Logo d'archEVE">
             </a>
+            <button class="header__menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+                <img class="header__icon" src="/assets/icon/menu-icon-bars.svg" alt="icône de menu hamburger">
+            </button>
         </div>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="list-unstyled menu__list">
+                <li class="menu__item">
+                    <a class="menu__item" href="">Archives</a>
+                    <img src="/assets/icon/simple-arrow.svg" alt="Icône de flèche">
+                    <nav class="sous-menu">
+                        <ul class="list-unstyled sous-menu__list">
+                            <li class="menu__item">
+                                <a class="sous-menu__link" href="">Technologie</a>
+                            </li>
+                            <li class="sous-menu__item">
+                                <a class="sous-menu__link" href="">Musique</a>
+                            </li>
+                            <li class="sous-menu__item">
+                                <a class="sous-menu__link" href="">Littérature</a>
+                            </li>
+                            <li class="sous-menu__item">
+                                <a class="sous-menu__link" href="">Cinéma</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/ajouter-une-archive.html">Ajouter une archive</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/a-propos.html">À propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/projects-archives.html">Projets archivés</a>
+                </li>
+            </ul>
+            <div class="menu__lang-switch">
+                <p class="menu__lang">
+                    EN | <strong>FR</strong>
+                </p>
+            </div>
+        </nav>
     </header>
+
+    <main class="main">
+        <img class="main__img" src="/assets/img/generated-image-futuristic-archives.jpg"
+            alt="Illustration d'un salle d'archive futuriste dans des tons noirs et violets">
+
+        <section class="main__section section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Les archives du futur
+                </h2>
+            </header>
+            <p class="section__para">
+                Dans le monde qui nous attends, l’humain a bien changé et ne ressemble plus à ce que vous êtes
+                actuellement. Que ce soit par la technologie, la médecine ou ses ambitions, l’Homme du futur sera un
+                transhumain.
+                <br>
+                Mais l’origine de cette ère transhumaniste est déjà entre vos mains et les archéologues du futur
+                l’étudient minutieusement.
+                <br>
+                Explorez les archives pour découvrir qui ou quoi a changé la face de l’humanité en étant la genèse du
+                transhumanisme et surtout comment.
+            </p>
+            <div class="section__illu">
+                <img class="section__img" src="/assets/img/generated-image-group-of-people.jpg"
+                    alt="Illustration d'un groupe de personne travaillant dans un lieu futuriste sur des parchemins"
+                    loading="lazy">
+                <p class="section__desc">
+                    Illustration des bureaux d'ArchEVE
+                </p>
+            </div>
+        </section>
+
+        <section class="main__section section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Archives à la une
+                </h2>
+            </header>
+
+            <div class="carousel">
+                <article class="carousel__item card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/neuralink-cover.jpg"
+                            alt="Elon Musk présentant le neuralink" loading="lazy">
+                    </a>
+                    <h2 class="card__title">Le neuralink, ancêtre controversé de l’homme-odrinateur</h2>
+                    <p class="card__desc">Elon Musk, fer de lance du transhumanisme dans les années 2020, implantait son
+                        Neuralink dans la tête de personnes handicapées.</p>
+                    <a class="btn card__btn" href="">Accéder à l'archive</a>
+                </article>
+
+                <article class="carousel__item card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/ghost-cover.jpg"
+                            alt="Affiche du film ghost in the shell de 1995" loading="lazy">
+                    </a>
+                    <h2 class="card__title">Ghost in the Shell, vision d’un transhumanisme cyberpunk et dystopique</h2>
+                    <p class="card__desc">Dans cette œuvre du millénaire dernier, le genre cyberpunk montre les craintes
+                        des Hommes face au transhumanisme à travers un univers dystopique et violent.</p>
+                    <a class="btn card__btn" href="">Accéder à l'archive</a>
+                </article>
+
+                <article class="carousel__item card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/villeneuve-cover.jpg"
+                            alt="Denis Villeneuve sur le tournage de Dune" loading="lazy">
+                    </a>
+                    <h2 class="card__title">Analyse de la science-fiction chez Denis Villeneuve</h2>
+                    <p class="card__desc">Mise en image des réflexions de l’époque sur notre place dans l’espace et sur
+                        la conscience des machines.</p>
+                    <a class="btn card__btn" href="">Accéder à l'archive</a>
+                </article>
+
+                <article class="carousel__item card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/electric-sheep-cover.jpg"
+                            alt="Illustration du livre les androïdes rêvent-ils de moutons électriques à côté de l'affiche du premier film blade runner"
+                            loading="lazy">
+                    </a>
+                    <h2 class="card__title">Les androïdes rêvent-ils de moutons électriques ?</h2>
+                    <p class="card__desc">La question posé par l’auteur Philip K. Dick, à l’origine de films mythiques,
+                        a-t-elle aujourd’hui enfin une réponse ?</p>
+                    <a class="btn card__btn" href="">Accéder à l'archive</a>
+                </article>
+
+                <article class="carousel__item card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/infinity-cover.jpg"
+                            alt="Un casque de Daft Punk de profil" loading="lazy">
+                    </a>
+                    <h2 class="card__title">Infinity repeating, l’ode à la machine des Daft Punk</h2>
+                    <p class="card__desc">Le baroud d’honneur d’un groupe de musique culte, explorant les thèmes du
+                        cycle technologique et de l'évolution vers le transhumanisme</p>
+                    <a class="btn card__btn" href="">Accéder à l'archive</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="main__section section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Contribuer aux archives
+                </h2>
+            </header>
+            <p class="section__para">
+                Le projet ArchEVE est avant tout un effort collaboratif. Rejoignez les archéologues du futur en ajoutant
+                votre propre archive. Partagez votre vision du monde et du futur à travers l'étude d'un film, d'un
+                livre, d'un jeu, etc.
+            </p>
+            <p class="section__para">
+                En écrivant vos propres archives, vous contribuez à construire une mémoire collective qui guidera les
+                archéologues du futur dans leur quête de compréhension. Chaque texte est une pièce unique ajoutée à
+                cette mosaïque, un témoignage précieux sur l’évolution de notre époque et les visions qui forgent le
+                monde à venir.
+            </p>
+            <a class="btn" href="/fr/ajouter-une-archive.html">Ajouter une archive</a>
+        </section>
+
+        <section class="main__section section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Les projets archivés
+                </h2>
+            </header>
+            <p class="section__para">
+                Des projets complètement différent de celui-ci on été retrouvés dans le passé et archivés ici.
+                <br>
+                Traitant de sujet variés, ils sont une fenêtre d'exploration sur la vision et les prédictions que les
+                femmes et les hommes du 21ème siècle avaient du futur.
+            </p>
+            <div>
+                <img class="section__img" src="/assets/img/other-project-juan.jpg"
+                    alt="Illustration d'un projet archivé titré humain sur mesure">
+                <p class="section__desc">Le projet Humain sur mesure par Juan</p>
+            </div>
+            <a class="btn" href="/fr/projects-archives.html">Voir les autres projets</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="/fr/">
+            <img class="footer__logo" src="/assets/icon/logo-light.svg" alt="Logo ArchEVE">
+        </a>
+        <p class="footer__title">
+            Informations sur le projet
+        </p>
+        <p class="footer__content">
+            Paolo Vincent
+        </p>
+        <p class="footer__content">
+            Groupe C2
+        </p>
+        <p class="footer__content">
+            Préhistoire du futur
+        </p>
+        <p class="footer__title">
+            Contact
+        </p>
+        <a class="footer__content" href="mailto:archEVE-team@gmail.com">archEVE-team@gmail.com</a>
+        <p class="footer__content">
+            01 23 45 67 89
+        </p>
+        <p class="footer__content">
+            1 rue Jean ValJean
+        </p>
+        <p class="footer__title">
+            Mentions légales
+        </p>
+        <p class="footer__content">
+            Projet réalisé en 2024 dans le cadre d’un exercice pédagogique au département <span><a href="https://blogdummi.fr/">MMI de Montbéliard</a></span>.
+        </p>
+    </footer>
 </body>
 
 </html>
