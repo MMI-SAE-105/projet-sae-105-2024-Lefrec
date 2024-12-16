@@ -1,0 +1,47 @@
+*{
+    color: var(--light);
+    font-family: var(--common);
+    font-weight: 300;
+    text-decoration: none;
+    margin: 0;
+}
+
+body{
+    background-color: var(--dark);
+}
+
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    display: flex;
+    width: fit-content;
+    padding: 7px 5px 5px 5px;
+    border: 1px solid var(--main-color);
+    font-family: var(--heading);
+    text-transform: uppercase;
+    font-size: var(--fs-xs);
+    border-radius: 3px;
+}
+
+.highlight{
+    color: var(--main-color);
+}

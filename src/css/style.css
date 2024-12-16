@@ -1,11 +1,14 @@
-@font-face {
-    font-family: "Horyzen";
-    src: url("/assets/font/Horyzen-24.ttf") format('truetype');
-}
-@font-face {
-    font-family: "Bahnschrift";
-    src: url("/assets/font/BAHNSCHRIFT.TTF") format('truetype');
-}
-
-
 @import "/src/css/vendors/normalize.css";
+
+@import "/src/css/utils/variables.css";
+
+@import "/src/css/base/main.css";
+@import "/src/css/base/media.css";
+
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/main.css";
+@import "/src/css/layout/footer.css";
+
+@import "/src/css/components/menu.css";
+@import "/src/css/components/section.css";
+@import "/src/css/components/card.css";

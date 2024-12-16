@@ -1,0 +1,22 @@
+.card{
+    display: flex;
+    flex: 1 0 300px;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    scroll-snap-align: center;
+}
+
+.card__img{
+    width: 100%;
+    height: 200px;
+}
+
+.card__title{
+    font-family: var(--heading);
+    font-size: var(--fs-l);
+}
+
+.card__desc{
+    font-size: var(--fs-s);
+}

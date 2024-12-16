@@ -1,0 +1,36 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 40px;
+    gap: 20px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.section__title{
+    font-family: var(--heading);
+    font-size: var(--fs-xl);
+    color: var();
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section__img{
+    width: 100%;
+    height: 200px;
+}
+
+.section__desc{
+    color: var(--gray);
+    font-size: var(--fs-s);
+}
+
+.section__carousel{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: scroll;
+    margin: 0 -40px;
+    padding: 0 40px;
+    scroll-snap-type: x mandatory;
+}

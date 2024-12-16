@@ -12,6 +12,7 @@
     <meta name="apple-mobile-web-app-title" content="ArchEVE" />
     <link rel="manifest" href="/assets/icon/site.webmanifest" />
     <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/menu.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
             <ul class="list-unstyled menu__list">
                 <li class="menu__item">
-                    <a class="menu__item" href="">Archives</a>
+                    <a class="menu__link" href="">Archives</a>
                     <img src="/assets/icon/simple-arrow.svg" alt="Icône de flèche">
                     <nav class="sous-menu">
                         <ul class="list-unstyled sous-menu__list">
@@ -83,11 +84,13 @@
             <p class="section__para">
                 Dans le monde qui nous attends, l’humain a bien changé et ne ressemble plus à ce que vous êtes
                 actuellement. Que ce soit par la technologie, la médecine ou ses ambitions, l’Homme du futur sera un
-                transhumain.
-                <br>
+                <span class="highlight">transhumain.</span>
+            </p>
+            <p class="section__para">
                 Mais l’origine de cette ère transhumaniste est déjà entre vos mains et les archéologues du futur
                 l’étudient minutieusement.
-                <br>
+            </p>
+            <p class="section__para">
                 Explorez les archives pour découvrir qui ou quoi a changé la face de l’humanité en étant la genèse du
                 transhumanisme et surtout comment.
             </p>
@@ -108,8 +111,8 @@
                 </h2>
             </header>
 
-            <div class="carousel">
-                <article class="carousel__item card">
+            <div class="section__carousel">
+                <article class="card">
                     <a href="">
                         <img class="card__img" src="/assets/img/neuralink-cover.jpg"
                             alt="Elon Musk présentant le neuralink" loading="lazy">
@@ -120,7 +123,7 @@
                     <a class="btn card__btn" href="">Accéder à l'archive</a>
                 </article>
 
-                <article class="carousel__item card">
+                <article class="card">
                     <a href="">
                         <img class="card__img" src="/assets/img/ghost-cover.jpg"
                             alt="Affiche du film ghost in the shell de 1995" loading="lazy">
@@ -131,7 +134,7 @@
                     <a class="btn card__btn" href="">Accéder à l'archive</a>
                 </article>
 
-                <article class="carousel__item card">
+                <article class="card">
                     <a href="">
                         <img class="card__img" src="/assets/img/villeneuve-cover.jpg"
                             alt="Denis Villeneuve sur le tournage de Dune" loading="lazy">
@@ -142,7 +145,7 @@
                     <a class="btn card__btn" href="">Accéder à l'archive</a>
                 </article>
 
-                <article class="carousel__item card">
+                <article class="card">
                     <a href="">
                         <img class="card__img" src="/assets/img/electric-sheep-cover.jpg"
                             alt="Illustration du livre les androïdes rêvent-ils de moutons électriques à côté de l'affiche du premier film blade runner"
@@ -154,7 +157,7 @@
                     <a class="btn card__btn" href="">Accéder à l'archive</a>
                 </article>
 
-                <article class="carousel__item card">
+                <article class="card">
                     <a href="">
                         <img class="card__img" src="/assets/img/infinity-cover.jpg"
                             alt="Un casque de Daft Punk de profil" loading="lazy">
@@ -238,7 +241,8 @@
             Mentions légales
         </p>
         <p class="footer__content">
-            Projet réalisé en 2024 dans le cadre d’un exercice pédagogique au département <span><a href="https://blogdummi.fr/">MMI de Montbéliard</a></span>.
+            Projet réalisé en 2024 dans le cadre d’un exercice pédagogique au département <span><a
+                    href="https://blogdummi.fr/">MMI de Montbéliard</a></span>.
         </p>
     </footer>
 </body>

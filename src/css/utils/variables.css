@@ -1,7 +1,17 @@
+@font-face {
+    font-family: "Horyzen";
+    src: url("/assets/font/Horyzen-24.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Bahnschrift";
+    src: url("/assets/font/BAHNSCHRIFT.TTF") format('truetype');
+}
+
 :root{
     /* colors */
     --dark : #000000;
-    --light : #ffffff;
+    --white : #ffffff;
+    --light : #eeeeee;
     --gray : #888888;
     --main-color : #a238ff;
     --secondary-color : #53396f;
@@ -14,5 +24,6 @@
     --fs-xl : 1.5rem;
     --fs-l : 1.25rem;
     --fs-m : 1rem;
-    --fs-s : 0.625rem;
+    --fs-s : 0.875rem;
+    --fs-xs : 0.625rem;
 }
