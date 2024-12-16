@@ -21,11 +21,11 @@
 
 .sous-menu{
     display: none;
-    align-items: center;
 }
 
 .sous-menu[aria-hidden="false"] {
     display: flex;
+    justify-content: space-around;
 }
 
 .menu__list{
@@ -37,6 +37,7 @@
 }
 
 .menu__link {
+    align-items: center;
     font-family: var(--heading);
     font-size: var(--fs-xxl);
 }
