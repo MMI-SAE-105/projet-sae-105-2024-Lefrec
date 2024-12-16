@@ -1,0 +1,18 @@
+:root{
+    /* colors */
+    --dark : #000000;
+    --light : #ffffff;
+    --gray : #888888;
+    --main-color : #a238ff;
+    --secondary-color : #53396f;
+
+    /* fonts */
+    --heading : "Horyzen", sans-serif;
+    --common : "Bahnschrift", sans-serif;
+
+    /* font sizes */
+    --fs-xl : 1.5rem;
+    --fs-l : 1.25rem;
+    --fs-m : 1rem;
+    --fs-s : 0.625rem;
+}
