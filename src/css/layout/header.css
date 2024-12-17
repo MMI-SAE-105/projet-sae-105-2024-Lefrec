@@ -8,7 +8,7 @@
     justify-content: space-between;
     background-color: var(--dark);
     border-bottom: 2px solid var(--secondary-color);
-    z-index: 1;
+    z-index: 2;
 }
 
 .header__link{
