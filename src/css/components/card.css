@@ -18,6 +18,11 @@
     font-size: var(--fs-l);
 }
 
+.card__detail{
+    font-size: var(--fs-xs);
+    color: var(--gray);
+}
+
 .card__desc{
     font-size: var(--fs-s);
     padding-bottom: 32px;
