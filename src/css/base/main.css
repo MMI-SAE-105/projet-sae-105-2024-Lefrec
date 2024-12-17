@@ -39,12 +39,14 @@ body{
 .btn {
     display: flex;
     width: fit-content;
+    align-self: end;
     padding: 7px 5px 5px 5px;
     border: 1px solid var(--main-color);
     font-family: var(--heading);
     text-transform: uppercase;
     font-size: var(--fs-xs);
     border-radius: 3px;
+    letter-spacing: 2px;
 }
 
 .highlight{
