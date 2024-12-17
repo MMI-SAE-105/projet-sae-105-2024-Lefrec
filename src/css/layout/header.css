@@ -34,11 +34,10 @@
 }
 
 .header__lang{
-    color: var(--main-color);
     font-weight: lighter;
 }
 
 .header__selected-lang{
-    color: var(--white);
+    color: var(--main-color);
     font-weight: bolder;
 }
