@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchEVE</title>
+    <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ArchEVE" />
+    <link rel="manifest" href="/assets/icon/site.webmanifest" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/menu.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__bar">
+            <a class="header__link" href="/en/">
+                <img class="header__logo" src="/assets/icon/logo-default.svg" alt="ArchEVE logo">
+            </a>
+            <div class="header__options">
+                <a class="header__lang-switch" href="/fr/index.html">
+                    <p class="header__lang">
+                        <span class="header__selected-lang">EN</span> | FR
+                    </p>
+                </a>
+                <button class="header__menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+                    <img class="header__icon" src="/assets/icon/menu-icon-bars.svg" alt="hamburger menu icon">
+                </button>
+            </div>
+        </div>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="list-unstyled menu__list">
+                <li class="menu__item">
+                    <span class="menu__link sous-menu__btn" role="navigation" id="btnSub" aria-label="submenu"
+                        aria-expanded="false" aria-controls="subNav">Archives
+                        <img class="sous-menu__icon" src="/assets/icon/simple-arrow.svg" alt="Arrow icon"></span>
+                    <nav class="sous-menu" id="subNav" aria-hidden="true">
+                        <ul class="list-unstyled sous-menu__list">
+                            <li class="menu__item">
+                                <a class="sous-menu__link" href="lists/liste-technologie.html">technology</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="sous-menu__link" href="lists/liste-musique.html">music</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="sous-menu__link" href="lists/liste-litterature.html">literature</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="sous-menu__link" href="lists/liste-cinema.html">cinema</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/add-an-archive.html">Add an archive</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/glossary.html">Glossary</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/archived-projects.html">Archived projects</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <img class="main__img" src="/assets/img/generated-image-futuristic-archives.webp"
+            alt="Illustration of a futuristic archive room in black and purple tones">
+
+        <section class="main__section section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Archives of the future
+                </h2>
+            </header>
+            <p class="section__para">
+                In the world ahead, humanity has changed significantly and no longer resembles what you are today.
+                Through technology, medicine, or ambition, the human of the future will be a <span
+                    class="highlight">transhuman.</span>
+            </p>
+            <p class="section__para">
+                But the origin of this transhumanist era is already in your hands and future archaeologists are studying
+                it carefully.
+            </p>
+            <p class="section__para">
+                <span class="highlight">Explore the archives</span> to discover who or what changed the face of humanity
+                by being the genesis of transhumanism, and most importantly, how.
+            </p>
+            <div class="section__illu">
+                <img class="section__img" src="/assets/img/generated-image-group-of-people.webp"
+                    alt="Illustration of a group of people working in a futuristic location on scrolls" loading="lazy">
+                <p class="section__desc">
+                    Illustration of ArchEVE offices
+                </p>
+            </div>
+        </section>
+
+        <section class="main__section section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Featured archives
+                </h2>
+            </header>
+
+            <div class="section__carousel">
+                <article class="card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/neuralink-cover.webp"
+                            alt="Elon Musk presenting Neuralink" loading="lazy">
+                    </a>
+                    <h2 class="card__title">Neuralink, the controversial ancestor of the human-computer</h2>
+                    <p class="card__desc">Elon Musk, a pioneer of transhumanism in the 2020s, implanted his Neuralink
+                        into the brains of disabled people.</p>
+                    <a class="btn card__btn" href="">Access the archive</a>
+                </article>
+
+                <article class="card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/ghost-cover.webp"
+                            alt="Poster of the 1995 film Ghost in the Shell" loading="lazy">
+                    </a>
+                    <h2 class="card__title">Ghost in the Shell, a vision of cyberpunk and dystopian transhumanism</h2>
+                    <p class="card__desc">In this work from the last millennium, the cyberpunk genre reflects humanity's
+                        fears of transhumanism through a dystopian and violent universe.</p>
+                    <a class="btn card__btn" href="">Access the archive</a>
+                </article>
+
+                <article class="card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/villeneuve-cover.webp"
+                            alt="Denis Villeneuve on the set of Dune" loading="lazy">
+                    </a>
+                    <h2 class="card__title">Analysis of science fiction by Denis Villeneuve</h2>
+                    <p class="card__desc">Visual representation of reflections from that time on our place in space and
+                        the consciousness of machines.</p>
+                    <a class="btn card__btn" href="">Access the archive</a>
+                </article>
+
+                <article class="card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/electric-sheep-cover.webp"
+                            alt="Illustration of the book Do Androids Dream of Electric Sheep next to the poster of the first Blade Runner movie"
+                            loading="lazy">
+                    </a>
+                    <h2 class="card__title">Do Androids Dream of Electric Sheep?</h2>
+                    <p class="card__desc">The question posed by author Philip K. Dick, which inspired mythical films,
+                        finally has an answer today?</p>
+                    <a class="btn card__btn" href="">Access the archive</a>
+                </article>
+
+                <article class="card">
+                    <a href="">
+                        <img class="card__img" src="/assets/img/infinity-cover.webp" alt="A Daft Punk helmet in profile"
+                            loading="lazy">
+                    </a>
+                    <h2 class="card__title">Infinity Repeating, Daft Punk's ode to the machine</h2>
+                    <p class="card__desc">The swan song of a legendary music group, exploring themes of technological
+                        cycles and evolution towards transhumanism</p>
+                    <a class="btn card__btn" href="">Access the archive</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="main__section section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Contribute to the archives
+                </h2>
+            </header>
+            <p class="section__para">
+                The ArchEVE project is above all <span class="highlight">a collaborative effort</span>. Join future
+                archaeologists by adding your own archive. Share your vision of the world and the future through the
+                study of a film, book, game, etc.
+            </p>
+            <p class="section__para">
+                By writing your own archives, you help build a collective memory that will guide future archaeologists
+                in their <span class="highlight">quest for understanding</span>. Each text is a unique piece added to
+                this mosaic, a valuable testimony on the evolution of our time and the visions shaping the world to
+                come.
+            </p>
+            <a class="btn" href="/en/add-an-archive.html">Add an archive</a>
+        </section>
+
+        <section class="main__section section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Archived projects
+                </h2>
+            </header>
+            <p class="section__para">
+                Completely different projects have been found in the past and archived here.
+                <br>
+                Covering <span class="highlight">varied topics</span>, they offer an exploration window into the vision
+                and predictions that men and women of the <span class="highlight">21st century</span> had about the
+                future.
+            </p>
+            <div>
+                <img class="section__img" src="/assets/img/other-project-juan.webp"
+                    alt="Illustration of an archived project titled Custom Human">
+                <p class="section__desc">Project Humain sur mesure by Juan</p>
+            </div>
+            <a class="btn" href="/en/archived-projects.html">View other projects</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="/en/">
+            <img class="footer__logo" src="/assets/icon/logo-light.svg" alt="ArchEVE logo">
+        </a>
+        <p class="footer__title">
+            Information about the project
+        </p>
+        <ul class="list-unstyled footer__list">
+            <li class="footer__item">
+                <p class="footer__content">Paolo Vincent</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__content">Group C2</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__content">Prehistory of the future</p>
+            </li>
+        </ul>
+        <p class="footer__title">
+            Contact
+        </p>
+        <ul class="list-unstyled footer__list">
+            <li class="footer__item">
+                <a class="footer__content" href="mailto:archEVE-team@gmail.com">archEVE-team@gmail.com</a>
+            </li>
+            <li class="footer__item">
+                <p class="footer__content">01 23 45 67 89</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__content">1 Rue Jean Valjean</p>
+            </li>
+        </ul>
+        <p class="footer__title">
+            Legal notice
+        </p>
+        <ul class="list-unstyled footer__list">
+            <li class="footer__item">
+                <p class="footer__content">
+                    Project carried out in 2024 as part of an educational exercise in the <span><a
+                            href="https://blogdummi.fr/">MMI department of Montbéliard</a></span>.
+                </p>
+            </li>
+        </ul>
+        <ul class="footer__socials list-unstyled">
+            <li>
+                <a href="https://www.facebook.com/mmimontbeliard/?locale=fr_FR">
+                    <img src="/assets/icon/facebook.svg" alt="Facebook icon"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/mmi_montbeliard/">
+                    <img src="/assets/icon/instagram.svg" alt="Instagram icon"></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg/videos">
+                    <img src="/assets/icon/youtube.svg" alt="YouTube icon"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

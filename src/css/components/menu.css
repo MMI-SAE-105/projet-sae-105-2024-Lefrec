@@ -35,14 +35,3 @@
     font-family: var(--heading);
     font-size: var(--fs-xxl);
 }
-
-.menu__lang-switch{
-    display: flex;
-    justify-content: center;
-    font: var(--heading);
-    font-size: var(--fs-xl);
-}
-
-.menu__lang{
-    color: var(--main-color);
-}

@@ -11,6 +11,11 @@
     z-index: 2;
 }
 
+.header__options{
+    display: flex;
+    align-items: center;
+}
+
 .header__link{
     height: fit-content;
     margin: 5px;
@@ -26,4 +31,14 @@
     padding: 0;
     border: none;
     background: none;
+}
+
+.header__lang{
+    color: var(--main-color);
+    font-weight: lighter;
+}
+
+.header__selected-lang{
+    color: var(--white);
+    font-weight: bolder;
 }
