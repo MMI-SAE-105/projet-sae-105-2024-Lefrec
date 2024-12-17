@@ -15,6 +15,7 @@
 }
 
 .sous-menu__link {
+    display: flex;
     font-family: var(--heading);
     font-size: var(--fs-l);
 }
