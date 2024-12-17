@@ -1,0 +1,30 @@
+.sous-menu{
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.32s ease-in-out;
+}
+
+.sous-menu[aria-hidden="false"] {
+    max-height: 200px;
+}
+
+.sous-menu__list{
+    padding: 0 50px;
+}
+
+.sous-menu__link {
+    font-family: var(--heading);
+    font-size: var(--fs-l);
+}
+
+.sous-menu__icon{
+    width: 25px;
+    height: 25px;
+    transition: transform 0.32s;
+}
+
+.sous-menu__icon--rotated{
+    transform: rotate(450deg);
+}

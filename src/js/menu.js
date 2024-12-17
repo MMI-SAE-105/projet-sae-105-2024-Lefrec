@@ -3,6 +3,7 @@ const subMenu = document.querySelector(".sous-menu");
 const btn = document.querySelector(".header__menu-btn");
 const subBtn = document.querySelector("#btnSub");
 const icon = document.querySelector(".header__icon");
+const subIcon = document.querySelector(".sous-menu__icon");
 
 
 btn.addEventListener("click", (event) => {
@@ -22,4 +23,5 @@ subBtn.addEventListener("click", (event) => {
     let isOpen = subBtn.ariaExpanded=="true";
     subBtn.ariaExpanded = !isOpen;
     subMenu.ariaHidden = isOpen;
+    subIcon.classList.toggle("sous-menu__icon--rotated");
 })
