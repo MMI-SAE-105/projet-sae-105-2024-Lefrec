@@ -33,3 +33,9 @@
     padding: 0 40px;
     scroll-snap-type: x mandatory;
 }
+
+.section__def{
+    font-family: var(--heading);
+    font-size: var(--fs-l);
+    margin-top: 40px;
+}
