@@ -1,9 +1,3 @@
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 .form__carousel{
     display: flex;
     flex-direction: row;
@@ -40,6 +34,10 @@
 .form__previous{
     position: absolute;
     left: 0;
+}
+
+.form__group{
+    margin: 10px 0;
 }
 
 .form__field{
