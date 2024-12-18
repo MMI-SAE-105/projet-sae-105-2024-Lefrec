@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add an archive</title>
+    <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ArchEVE" />
+    <link rel="manifest" href="/assets/icon/site.webmanifest" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/menu.js"></script>
+    <script type="module" src="/src/js/redaction-form.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__bar">
+            <a class="header__link" href="/en/">
+                <img class="header__logo" src="/assets/icon/logo-default.svg" alt="ArchEVE logo">
+            </a>
+            <div class="header__options">
+                <a class="header__lang-switch" href="/fr/ajouter-une-archive.html">
+                    <p class="header__lang">
+                        <span class="header__selected-lang">EN</span> | FR
+                    </p>
+                </a>
+                <button class="header__menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+                    <img class="header__icon" src="/assets/icon/menu-icon-bars.svg" alt="hamburger menu icon">
+                </button>
+            </div>
+        </div>
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="list-unstyled menu__list">
+                <li class="menu__item">
+                    <span class="menu__link sous-menu__btn" role="navigation" id="btnSub" aria-label="submenu"
+                        aria-expanded="false" aria-controls="subNav">Archives
+                        <img class="sous-menu__icon" src="/assets/icon/simple-arrow.svg" alt="Arrow icon"></span>
+                    <nav class="sous-menu" id="subNav" aria-hidden="true">
+                        <ul class="list-unstyled sous-menu__list">
+                            <li class="menu__item">
+                                <a class="sous-menu__link" href="lists/technology-list.html">technology</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="sous-menu__link" href="lists/music-list.html">music</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="sous-menu__link" href="lists/literature-list.html">literature</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="sous-menu__link" href="lists/cinema-list.html">cinema</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/add-an-archive.html">Add an archive</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/glossary.html">Glossary</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/archived-project.html">Archived projects</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <img class="main__img" src="/assets/img/generated-image-man-working-front.webp"
+            alt="Illustration of a man writing on a futuristic device">
+
+        <section class="section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    How to Add an Archive?
+                </h2>
+            </header>
+            <p class="section__para">
+                If you want to add <span class="highlight">your own archive</span>, simply fill out the form below on
+                this page, completing each section as indicated.
+            </p>
+            <p class="section__para">
+                Please respect <span class="highlight">ArchEVE's rules</span> and common sense to ensure everyone
+                enjoys using the site.
+            </p>
+        </section>
+
+        <section class="section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Submission Form
+                </h2>
+            </header>
+
+            <form class="form" action="#" aria-labelledby="form-title">
+                <h3 id="form-title" class="visuallyhidden">Submission Form</h3>
+                <div class="form__carousel">
+                    <div class="form__panel">
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="author">Author</label>
+                            <input class="form__field" type="text" name="author" id="author"
+                                placeholder="Archive Author" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="date">Date</label>
+                            <input class="form__field" type="date" name="date" id="date" value="2600-01-01"
+                                min="2600-01-01" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="category">Category</label>
+                            <input class="form__field" type="text" name="category" id="category" list="category-list"
+                                placeholder="Category" />
+                        </div>
+                        <datalist id="category-list">
+                            <option value="Technology"></option>
+                            <option value="Music"></option>
+                            <option value="Literature"></option>
+                            <option value="Cinema"></option>
+                            <option value="Other"></option>
+                        </datalist>
+                        <div class="form__control">
+                            <a class="btn-unstyled btn form__next">Next</a>
+                        </div>
+                    </div>
+                    <div class="form__panel">
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="heading">Title</label>
+                            <input class="form__field" type="text" name="heading" id="heading"
+                                placeholder="Archive Title" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="subheading">Subtitle</label>
+                            <input class="form__field" type="text" name="subheading" id="subheading"
+                                placeholder="Subtitle or intro" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="illustration">Illustration</label>
+                            <input class="form__field" type="file" name="illustration" id="illustration"
+                                accept="image/png, image/jpeg" />
+                        </div>
+                        <div class="form__control">
+                            <a class="btn-unstyled btn form__previous">Previous</a>
+                            <a class="btn-unstyled btn form__next">Next</a>
+                        </div>
+                    </div>
+                    <div class="form__panel">
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="text">Text Content</label>
+                            <textarea class="form__field" name="text" id="text" rows="5"
+                                placeholder="Text content of the archive"></textarea>
+                        </div>
+                        <div class="form__control">
+                            <a class="btn-unstyled btn form__previous">Previous</a>
+                            <a class="btn-unstyled btn form__next">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Rules to Follow
+                </h2>
+            </header>
+            <p class="section__para">
+                Do not use <span class="highlight">hateful</span> or intentionally <span class="highlight">offensive
+                    language</span>, nor racism, sexism,
+                personal attacks, or defamation against individuals or organizations.
+            </p>
+            <p class="section__para">
+                Do not use <span class="highlight">stolen or copied</span> content.
+            </p>
+            <p class="section__para">
+                Respect the site's spirit and have fun.
+            </p>
+            <p class="section__para">
+                You are allowed to invent and imagine future events.
+            </p>
+            <p class="section__para">
+                You are encouraged to use a pseudonym for the author and invent a publication date consistent with
+                your archive's content.
+            </p>
+            <p class="section__para">
+                If no existing category fits your archive, you can <span class="highlight">suggest adding a new
+                    category</span> to the ArchEVE team.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="/en/">
+            <img class="footer__logo" src="/assets/icon/logo-light.svg" alt="ArchEVE logo">
+        </a>
+        <p class="footer__title">
+            Project Information
+        </p>
+        <ul class="list-unstyled footer__list">
+            <li class="footer__item">
+                <p class="footer__content">Paolo Vincent</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__content">Group C2</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__content">Prehistory of the future</p>
+            </li>
+        </ul>
+        <p class="footer__title">
+            Contact
+        </p>
+        <ul class="list-unstyled footer__list">
+            <li class="footer__item">
+                <a class="footer__content" href="mailto:archEVE-team@gmail.com">archEVE-team@gmail.com</a>
+            </li>
+            <li class="footer__item">
+                <p class="footer__content">01 23 45 67 89</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__content">1 Rue Jean Valjean</p>
+            </li>
+        </ul>
+        <p class="footer__title">
+            Legal notice
+        </p>
+        <ul class="list-unstyled footer__list">
+            <li class="footer__item">
+                <p class="footer__content">
+                    Project carried out in 2024 as part of an educational exercise in the <span><a
+                            href="https://blogdummi.fr/">MMI department of Montbéliard</a></span>.
+                </p>
+            </li>
+        </ul>
+        <ul class="footer__socials list-unstyled">
+            <li>
+                <a href="https://www.facebook.com/mmimontbeliard/?locale=fr_FR">
+                    <img src="/assets/icon/facebook.svg" alt="Facebook icon"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/mmi_montbeliard/">
+                    <img src="/assets/icon/instagram.svg" alt="Instagram icon"></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCgW7jR8McJwjxPh0fDQaXGg/videos">
+                    <img src="/assets/icon/youtube.svg" alt="YouTube icon"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
