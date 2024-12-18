@@ -1,9 +1,52 @@
-.form__field{
+.form{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+.form__carousel{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    transition: transform 0.32s;
+    width: 100%;
+    margin: 0 -40px;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+.form__panel{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 100%;
+    gap: 10px;
+    padding-top: 2px;
+}
+
+.form__control{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 32px;
+}
+
+.form__next{
+    position: absolute;
+    right: 0;
+}
+
+.form__previous{
+    position: absolute;
+    left: 0;
+}
+
+.form__field{
     background: none;
+    width: 100%;
     border: 1px solid var(--main-color);
     border-radius: 3px;
     padding: 5px;
-    margin: 10px 0;
 }
 

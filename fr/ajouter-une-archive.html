@@ -13,6 +13,7 @@
     <link rel="manifest" href="/assets/icon/site.webmanifest" />
     <link rel="stylesheet" href="/src/css/style.css">
     <script type="module" src="/src/js/menu.js"></script>
+    <script type="module" src="/src/js/redaction-form.js"></script>
 </head>
 
 <body>
@@ -78,35 +79,127 @@
         <img class="main__img" src="/assets/img/generated-image-man-working-front.webp"
             alt="Illustration d'un homme écrivant sur un appareil futuriste">
 
-        <section class="main__section section">
+        <section class="section">
             <header class="section__header">
                 <h2 class="section__title">
-                    Les archives du futur
+                    Comment ajouter une archive ?
                 </h2>
             </header>
             <p class="section__para">
-                Dans le monde qui nous attends, l’humain a bien changé et ne ressemble plus à ce que vous êtes
-                actuellement. Que ce soit par la technologie, la médecine ou ses ambitions, l’Homme du futur sera un
-                <span class="highlight">transhumain.</span>
+                Si vous souhaitez ajouter <span class="highlight">votre propre archive</span>, remplissez simplement le
+                formulaire plus bas sur cette
+                page en remplissant chaque section comme indiquée.
             </p>
             <p class="section__para">
-                Mais l’origine de cette ère transhumaniste est déjà entre vos mains et les archéologues du futur
-                l’étudient minutieusement.
+                Veuillez à respecter <span class="highlight">les règles</span> de ArchEVE et les règles de bon sens afin
+                de garantir pour tous une
+                utilisation agréable du site.
             </p>
-            <p class="section__para">
-                <span class="highlight">Explorez les archives</span> pour découvrir qui ou quoi a changé la face de
-                l’humanité en étant la genèse du
-                transhumanisme et surtout comment.
-            </p>
-            <div class="section__illu">
-                <img class="section__img" src="/assets/img/generated-image-group-of-people.webp"
-                    alt="Illustration d'un groupe de personne travaillant dans un lieu futuriste sur des parchemins"
-                    loading="lazy">
-                <p class="section__desc">
-                    Illustration des bureaux d'ArchEVE
-                </p>
-            </div>
         </section>
+
+        <section class="section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Formulaire de rédaction
+                </h2>
+            </header>
+
+            <form class="form" action="#" aria-labelledby="form-title">
+                <h3 id="form-title" class="visuallyhidden">Formulaire de rédaction</h3>
+                <div class="form__carousel">
+                    <div class="form__panel">
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="author">Auteur</label>
+                            <input class="form__field" type="text" name="author" id="author"
+                                placeholder="Auteur de l'archive" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="date">Date</label>
+                            <input class="form__field" type="date" name="date" id="date" value="2600-01-01"
+                                min="2600-01-01" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="category">Catégorie</label>
+                            <input class="form__field" type="text" name="category" id="category" list="category-list"
+                                placeholder="Catégorie" />
+                        </div>
+                        <datalist id="category-list">
+                            <option value="Technologie"></option>
+                            <option value="Musique"></option>
+                            <option value="Littérature"></option>
+                            <option value="Musique"></option>
+                            <option value="Autre"></option>
+                        </datalist>
+                        <div class="form__control">
+                            <a class="btn-unstyled btn form__next">Suivant</a>
+                        </div>
+                    </div>
+                    <div class="form__panel">
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="heading">Titre</label>
+                            <input class="form__field" type="text" name="heading" id="heading"
+                                placeholder="Titre de l'archive" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="subheading">Sous-titre</label>
+                            <input class="form__field" type="text" name="subheading" id="subheading"
+                                placeholder="Sous-titre ou chapô" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="illustration">Illustration</label>
+                            <input class="form__field" type="file" name="illustration" id="illustration"
+                                accept="image/png, image/jpeg" />
+                        </div>
+                        <div class="form__control">
+                            <a class="btn-unstyled btn form__previous">Précédent</a>
+                            <a class="btn-unstyled btn form__next">Suivant</a>
+                        </div>
+                    </div>
+                    <div class="form__panel">
+                        <div class="form__group">
+                            <label class="form__label visuallyhidden" for="text">Contenu texte</label>
+                            <textarea class="form__field" name="text" id="text" rows="5" placeholder="Contenu textuel de l'archive"></textarea>
+                        </div>
+                        <div class="form__control">
+                            <a class="btn-unstyled btn form__previous">Précédent</a>
+                            <a class="btn-unstyled btn form__next">Soumettre</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="section">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Quelles règles à respecter ?
+                </h2>
+            </header>
+            <p class="section__para">
+                N’utilisez pas de <span class="highlight">langage haineux</span> ou intentionnellement <span
+                    class="highlight">offensant</span>, pas de racisme, de sexisme,
+                d’attaques personnelles ou de diffamations envers des personnes physiques comme morales.
+            </p>
+            <p class="section__para">
+                N’utilisez pas de de contenus <span class="highlight">volé ou copié</span>.
+            </p>
+            <p class="section__para">
+                Respectez l’esprit du site et amusez-vous.
+            </p>
+            <p class="section__para">
+                Vous avez le droit d’inventer et d’imaginer des évènements futurs.
+            </p>
+            <p class="section__para">
+                Vous êtes invité à utiliser un pseudonyme d’auteur et à inventer une date de publication cohérente avec
+                le contenu de l’archive.
+            </p>
+            <p class="section__para">
+                Si aucune catégorie existente de correspond à votre archive vous pouvez <span
+                    class="highlight">soumettre l’ajout d’une nouvelle
+                    catégorie</span> à l’équipe ArchEVE.
+            </p>
+        </section>
+
     </main>
 
     <footer class="footer">
