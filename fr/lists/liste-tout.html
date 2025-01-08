@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste d'archives</title>
     <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96" />
-    <title>À propos</title>
     <link rel="icon" type="image/svg+xml" href="/assets/icon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/icon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png" />
@@ -22,7 +22,7 @@
                 <img class="header__logo" src="/assets/icon/logo-default.svg" alt="Logo d'archEVE">
             </a>
             <div class="header__options">
-                <a class="header__lang-switch" href="/en/about.html">
+                <a class="header__lang-switch" href="/en/lists/all-list.html">
                     <p class="header__lang">
                         EN | <span class="header__selected-lang">FR</span>
                     </p>
@@ -41,19 +41,19 @@
                     <nav class="sous-menu" id="subNav" aria-hidden="true">
                         <ul class="list-unstyled sous-menu__list">
                             <li class="menu__item">
-                                <a class="sous-menu__link" href="lists/liste-tout.html">Toutes les archives</a>
+                                <a class="sous-menu__link" href="liste-tout.html">Toutes les archives</a>
                             </li>
                             <li class="menu__item">
-                                <a class="sous-menu__link" href="lists/liste-technologie.html">Technologie</a>
+                                <a class="sous-menu__link" href="liste-technologie.html">Technologie</a>
                             </li>
                             <li class="menu__item">
-                                <a class="sous-menu__link" href="lists/liste-musique.html">Musique</a>
+                                <a class="sous-menu__link" href="liste-musique.html">Musique</a>
                             </li>
                             <li class="menu__item">
-                                <a class="sous-menu__link" href="lists/liste-litterature.html">Littérature</a>
+                                <a class="sous-menu__link" href="liste-litterature.html">Littérature</a>
                             </li>
                             <li class="menu__item">
-                                <a class="sous-menu__link" href="lists/liste-cinema.html">Cinéma</a>
+                                <a class="sous-menu__link" href="liste-cinema.html">Cinéma</a>
                             </li>
                         </ul>
                     </nav>
@@ -78,49 +78,69 @@
     </header>
 
     <main class="main">
-        <img class="main__img" src="/assets/img/about-me-cover.webp" alt="Photos du groupe d'amis du créateur du site">
+        <img class="main__img" src="/assets/img/generated-image-futuristic-archives.webp"
+            alt="Illustration d'un salle d'archive futuriste dans des tons noirs et violets">
 
         <section class="section">
             <header class="section__header">
                 <h2 class="section__title">
-                    À propos
+                    Liste d'archives
                 </h2>
             </header>
-            <p class="section__para">
-                Bonjour, je m’appelle <span class="highlight">Paolo Vincent</span>, j’ai 18
-                ans et je suis actuellement en première année de MMI à
-                Montbéliard (le mec avec le t-shirt rose).
-            </p>
-            <p class="section__para">
-                Ce site est ma réponse au sujet du projet du semestre 1 : <span class="highlight">Préhistoire du
-                    futur</span>.
-                <br>
-                J’ai choisi de parler du transhumanisme et surtout de comment des personnes appartenant à un futur
-                lointain et vivant dans un
-                monde où <span class="highlight">la transhumanité</span> serait la norme pourraient nous percevoir.
-            </p>
-            <p class="section__para">
-                Je pense que ce thème est pertinent car j’imagine que nous, simples humains faits de muscles et d’os,
-                paraîtront bien primitifs, bien préhistoriques, à <span class="highlight">des archéologues du
-                    futur</span>.
-            </p>
-            <p class="section__para">
-                De plus, la tendance <span class="highlight">accélérationniste</span> qui domine aujourd’hui les
-                domaines de la tech et
-                particulièrement l’IA pousse à se poser des questions sur l’éthique de toutes ces innovations, des
-                réflexions qu’il est possible de mener sur ce site.
-            </p>
-            <p class="section__para">
-                Enfin, l’idée de faire d’ArchEVE un site d’<span class="highlight">écriture collaborative</span> permet
-                à tous de se positionner comme
-                un archéologue du futur afin de développer et partager ses opinions et ses réflexions sur notre monde,
-                comme sur celui de demain.
-            </p>
-            <p class="section__para">
-                Si vous avez des questions ou que vous souhaitez me contacter pour quoi que ce soit n'hésitez pas à le
-                faire via le formulaire disponible sur le site.
-            </p>
-            <a class="btn" href="/fr/contact.html">Me contacter</a>
+
+            <div class="archive">
+                <a class="archive__card" href="../articles/ghost.html">
+                    <p class="archive__title">
+                        Ghost in the Shell, vision d'un transhumanisme cyberpunk et dystopique
+                    </p>
+                    <p class="archive__detail">
+                        Par l'équipe ArchEVE
+                        <br>
+                        Archive du 27/12/2634
+                    </p>
+                </a>
+                <a class="archive__card" href="../articles/denis-villeneuve.html">
+                    <p class="archive__title">
+                        Analyse de la science-fiction chez Denis Villeneuve
+                    </p>
+                    <p class="archive__detail">
+                        Par l'équipe ArchEVE
+                        <br>
+                        Archive du 13/01/2635
+                    </p>
+                </a>
+                <a class="archive__card" href="../articles/moutons-electriques.html">
+                    <p class="archive__title">
+                        Les androïdes rêvent-ils de moutons électriques ?
+                    </p>
+                    <p class="archive__detail">
+                        Par l'équipe ArchEVE
+                        <br>
+                        Archive du 03/12/2634
+                    </p>
+                </a>
+                <a class="archive__card" href="../articles/infinity-repeating.html">
+                    <p class="archive__title">
+                        Infinity repeating, l'ode à la machine des Daft Punk
+                    </p>
+                    <p class="archive__detail">
+                        Par l'équipe ArchEVE
+                        <br>
+                        Archive du 14/11/2634
+                    </p>
+                </a>
+                <a class="archive__card" href="../articles/neuralink.html">
+                    <p class="archive__title">
+                        Le neuralink, ancêtre controversé de l'homme-ordinateur
+                    </p>
+                    <p class="archive__detail">
+                        Par l'équipe ArchEVE
+                        <br>
+                        Archive du 21/10/2634
+                    </p>
+                </a>
+            </div>
+            <a class="btn" href="../ajouter-une-archive.html">Ajouter une archive</a>
         </section>
     </main>
 

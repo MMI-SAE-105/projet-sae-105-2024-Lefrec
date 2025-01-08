@@ -7,7 +7,7 @@
 }
 
 .sous-menu[aria-hidden="false"] {
-    max-height: 250px;
+    max-height: 300px;
 }
 
 .sous-menu__list{
